@@ -9,7 +9,7 @@
 > An automated pre-merge gatekeeper that inspects AI-generated Python code for hidden security flaws, edge-case crashes, and missed requirements before it reaches production.
 
 **GitHub Repository:** [https://github.com/LuckyG05/codegate-ai](https://github.com/LuckyG05/codegate-ai)  
-**Live Web App:** *[Open in Streamlit](https://github.com/LuckyG05/codegate-ai)* 
+**Live Web App:** *[https://codegate-ai.streamlit.app/](https://codegate-ai.streamlit.app/)* 
 
 ---
 
