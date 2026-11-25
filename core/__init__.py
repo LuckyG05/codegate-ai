@@ -1,0 +1,1 @@
+"""Core package for CodeGate AI Code Review & Decision Engine."""
