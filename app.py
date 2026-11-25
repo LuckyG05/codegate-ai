@@ -319,8 +319,9 @@ def _render_architecture_tab() -> None:
            SQL injection, hardcoded secrets, dangerous `eval()`/`exec()`, shell injection,
            silent `except: pass`, mutable default arguments, and literal division by zero.
         2. **Layer 2 — AI Requirement & Edge-Case Verifier (`core/llm_reviewer.py`)**
-           Sends requirements, line-numbered code, and Layer 1 findings to **Groq** (primary)
-           with automatic failover to **Google Gemini** and a safe **offline heuristic fallback**.
+           Sends requirements, line-numbered code, and Layer 1 findings to **Groq Cloud API**
+           (high-speed LPU inference with models like `openai/gpt-oss-120b` and `qwen/qwen3.8-27b`)
+           with a safe **offline heuristic fallback**.
         3. **Deterministic Decision Engine (`core/decision_engine.py`)**
            Computes a transparent `0–100` score and enforces strict merge gates instead of
            letting an LLM guess the verdict.
