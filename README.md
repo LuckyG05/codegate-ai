@@ -32,9 +32,9 @@ Allowing AI-written code to bypass human review directly into production leads t
 Instead of trusting an LLM to blindly guess a verdict, CodeGate AI uses a **Two-Layer Hybrid Architecture** paired with a **deterministic mathematical scoring engine**:
 
 ```text
-[ Requirements + Submitted Python Code ]
-                   │
-                   ▼
+              [ Requirements + Submitted Python Code ]
+                                 │
+                                 ▼
   ┌─────────────────────────────────────────────────────────────┐
   │  Layer 1: Deterministic Static AST Scanner                  │
   │  (Pure Python `ast` + Regex — 100% deterministic, zero AI)  │
